@@ -1,17 +1,20 @@
 jobs:
   include:
     - os: RHEL
+      dist: rhel8
       language: c
       arch: amd64
       script:
         - clang -coverage -O0 hello_world.c -o hello_world
         - ./hello_world
     - os: RHEL
+      dist: rhel8
       language: python
       arch: amd64
       script:
         - python hello_world.py
     - os: RHEL
+      dist: rhel8
       language: java
       arch: amd64
       script:
@@ -33,6 +36,7 @@ jobs:
       script:
         - node hello_world.js
     - os: RHEL
+      dist: rhel8
       arch: amd64
       services:
         - mysql

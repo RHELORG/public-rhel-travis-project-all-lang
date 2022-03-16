@@ -1,6 +1,6 @@
 jobs:
   include:
-    - os: linux
+    - os: RHEL
       dist: rhel8
       language: c
       arch: amd64
@@ -20,7 +20,7 @@ jobs:
       script:
         - javac hello_world.java
         - java HelloWorld
-    - os: linux
+    - os: RHEL
       dist: rhel8
       arch: amd64
       script:
